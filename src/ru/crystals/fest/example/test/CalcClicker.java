@@ -195,6 +195,7 @@ public enum CalcClicker {
                         if(((JButton)component).getText().compareToIgnoreCase(((JTextField)list.get(index).getComponent(3)).getText()) == 0) {
                             // правда
                             System.out.println("Правда");
+                            System.out.println(((JButton) component).getActionListeners());
                             makeLabel(((JTextField)list.get(index).getComponent(3)).getText() + " : " + ((JTextField)list.get(index).getComponent(3)).getText(), true);
                         } else {
                             // неправда
